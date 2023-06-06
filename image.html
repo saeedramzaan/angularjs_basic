@@ -1,0 +1,22 @@
+
+<!-- https://onlinecode.org/angularjs-upload-files-using-php/ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AngularJS upload files using php - upload and display image using AngularJS example - onlinecode</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+</head>
+<body ng-app="myUploadApp" ng-controller="ImageUploadController">
+    <input type="file" ng-model="myUplodeFile" class="form-control" accept="image/*"  onchange="angular.element(this).scope().uploadedFile(this)">
+    <button ng-click = "calluploadFile()">Upload File</button>
+    <br/><br/>
+     <img ng-src="{{uri}}">
+	 <script type="text/javascript">
+		
+	 </script>
+
+<script src="cont.js" type="text/javascript"></script>
+</body>
+</html>
